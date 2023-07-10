@@ -49,8 +49,7 @@ def extract_titles(titles: list[str]) -> list[tuple[str, str]]:
 | Magpie's Easy Falafel Cakes                            | 2613      |
 | Dukkah                                                 | 2614      |
 | Om Ali                                                 | 2615      |
-| Rice Pudding with Lemon Juice and Caramelized Onion    | 2616      |
-| (Egyptian Kishk)                                       |           |
+| Rice Pudding with Lemon Juice and Caramelized Onion (Egyptian Kishk)       | 2616      |
 | Couscous with Olives and Sun-Dried Tomato              | 2617      |
 | Fava Bean Breakfast Spread                             | 2618      |
 | Koshary                                                | 2619      |
