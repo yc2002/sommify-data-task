@@ -26,7 +26,7 @@ Your task is to implement a Python function that takes a string as input and sep
 1. Fork this repository.
 2. Download data using script provided in `data` folder.
 ```bash
-python download_data.py
+python data/download_data.py
 ```
 3. Implement your solution in `solution.py` file. For developing you can use `solution.ipynb` file but make sure to copy your solution to `solution.py` file. Additional data preprocessing can be added it is welcome but not required.
 ```python
