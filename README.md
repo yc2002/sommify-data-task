@@ -72,4 +72,39 @@ William : william@sommify.ai (Questions about the task)
 
 ## Submission
 
-Write here your submission description/notes.
+
+## Approach explanation (Split+Detect)
+
+For each Title, there are 4 different structures:
+1. English
+2. Non-English
+3. English (Splitter) Non-English
+4. Non-English (Splitter) English
+
+Here Types 1 and 2 are similar where they only contain alphabetic characters. Types 3 and 4 contain two parts which are split by '-' or '()'. We can identify different parts of the title by looking for splitters ('-' and '()').
+
+Once we have found the different parts of the title, we can utilize language detectors to identify whether a part is in English or not.
+
+## Split Title
+
+
+## Language Detection
+
+fasttext library provides pre-trained language detection models with high accuracy and low time cost and is the most efficient among popular language detection tools like langdetect, langid and spaCY. We will implement our approach based on fasttext.
+
+## Potential approach (Heuristic)
+
+To determine whether a part is in English or not, we can utilize an English-food-recipe vocabulary to help us. A part containing a word from the Vocabulary is more likely to be in English.
+
+Trade-off:
+1. Could achieve similar accuracy if the vocabulary size is large enough and relevant
+2. Different languages may share the same word could reduce accuracy
+3. Less expensive than language detection
+
+Due to the limitation of time and resources, this approach is not taken.
+ 
+
+
+
+
+
