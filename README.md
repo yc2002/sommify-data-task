@@ -90,7 +90,7 @@ Once we have found the different parts of the title, we can utilize language det
 
 ## Language Detection
 
-fasttext library provides pre-trained language detection models with high accuracy and low time cost and is the most efficient among popular language detection tools like langdetect, langid and spaCY. We will implement our approach based on fasttext.
+'fasttext' library provides pre-trained language detection models with high accuracy and low time cost and is the most efficient among popular language detection tools like langdetect, langid and spaCY. We will implement our approach based on 'fasttext'.
 
 ## Potential approach (Heuristic)
 
@@ -102,9 +102,3 @@ Trade-off:
 3. Less expensive than language detection
 
 Due to the limitation of time and resources, this approach is not taken.
- 
-
-
-
-
-
