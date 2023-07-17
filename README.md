@@ -85,9 +85,6 @@ Here Types 1 and 2 are similar where they only contain alphabetic characters. Ty
 
 Once we have found the different parts of the title, we can utilize language detectors to identify whether a part is in English or not.
 
-## Split Title
-
-
 ## Language Detection
 
 'fasttext' library provides pre-trained language detection models with high accuracy and low time cost and is the most efficient among popular language detection tools like langdetect, langid and spaCY. We will implement our approach based on 'fasttext'.
@@ -95,6 +92,10 @@ Once we have found the different parts of the title, we can utilize language det
 ## Non-language-specific part
 'Fried Rice With Shrimp (1953)', 'Thai Beef Curry  (2)', 'Thai Coconut Lime: Infused Skewers (#2)', 'Rogan Josh (2)'
 Above are some examples of the cases when we will have non-language-specific parts like digits and special characters (e.g. 1953,#2,2), we will filter out these parts using list comprehension(Efficient).
+
+
+## Vectorization
+Using list comprehension and pandas/numpy can benefit from the efficiency of vectorization. In the main programme, we can use pandas. apply() to apply fasttext's predict() in vectorized way to improve efficiency.
 
 ## Potential approach (Heuristic)
 
